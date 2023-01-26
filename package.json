@@ -1,0 +1,66 @@
+{
+  "name": "melody-bits-server",
+  "version": "0.4.0",
+  "description": "",
+  "main": "dist/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node out/src/main.js",
+    "start:dev": "nodemon out/src/main.js",
+    "build": "tsc -w",
+    "test": "mocha out/test/**/*"
+  },
+  "author": "Vyrcrezen",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/chai": "^4.3.4",
+    "@types/express": "^4.17.14",
+    "@types/imagemin-webp": "^7.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/mssql": "^8.1.1",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^18.11.9",
+    "@types/sinon": "^10.0.13",
+    "@types/uuid": "^8.3.4",
+    "@types/validator": "^13.7.10",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "sinon": "^15.0.1",
+    "ts-sinon": "^2.0.2",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@types/imagemin": "^7.0.0",
+    "aws-sdk": "^2.1244.0",
+    "bcrypt": "^5.1.0",
+    "class-validator": "^0.14.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "express-jwt": "^8.3.0",
+    "graphql": "^15.8.0",
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0",
+    "mssql": "^9.0.1",
+    "multer": "^1.4.5-lts.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.25.3",
+    "sequelize-typescript": "^2.1.5",
+    "uuid": "^9.0.0",
+    "webp-converter": "^2.3.3"
+  },
+  "overrides": {
+    "trim-newlines": "^4.0.2",
+    "semver-regex": "4.0.5",
+    "imagemin-mozjpeg": {
+      "uuid": "^9.0.0",
+      "semver-regex": "4.0.5"
+    },
+    "imagemin-webp": {
+      "uuid": "^9.0.0",
+      "semver-regex": "4.0.5"
+    }
+  }
+}
