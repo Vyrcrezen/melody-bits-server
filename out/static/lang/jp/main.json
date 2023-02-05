@@ -1,0 +1,161 @@
+{
+	"lang": "jp",
+	"numPostfix": {
+		"deka": "n/u",
+		"hecto": "n/u",
+		"kilo": "k",
+		"mega": "million"
+	},
+	"nav": {
+		"home": "サイト概要",
+		"browse": "音楽一覧",
+		"upload": "アップロード",
+		"approve": " アプルーブ ",
+		"discussions": "ディスカッション",
+		"login": "ログイン",
+		"anonUser": {
+			"email": "イーメイル",
+			"password": "パスワード",
+			"login": "ログイン",
+			"register": "登録する"
+		},
+		"loggedUser": {
+			"profile": "プロファイル",
+			"submissions": "提供",
+			"messages": "メッセージ",
+			"favorites": "お気に入り",
+			"logout": "ログアウトする"
+		}
+	},
+	"loginForm": {
+		"login": "ログイン",
+		"email": "イーメイル",
+		"password": "パスワード",
+		"loginBtn": "ログイン"
+	},
+	"registerForm": {
+		"username": "ユーザー名",
+		"register": "登録する",
+		"email": "イーメイル",
+		"password": "パスワード",
+		"rePassword": "リピートパスワード",
+		"registerBtn": "登録する"
+	},
+	"musicUploadForm": {
+        "selectImageBtn": "画像を選択",
+        "selectMusicBtn": "音楽を選択",
+        "title": "タイトル",
+        "link": "リンク",
+        "artist": "アーティスト",
+        "tags": "タグ",
+        "album": "アルバム",
+        "recordLabel": "レコード・レーベル",
+        "publisher": "パブリッシャー",
+        "uploadMusicBtn": "音楽をアップロード",
+        "editMusicBtn": "変更を保存"
+    },
+	"musicCard": {
+		"menu": {
+			"overview": "概要",
+			"details": "詳細",
+			"comments": "コメント",
+			"report": "報告",
+			"edit": "編集",
+			"delete": "削除"
+		},
+		"plays": "再生回数",
+        "comments": "コメント",
+        "uploader": "アップローダー",
+        "title": "タイトル",
+        "artist": "アーティスト",
+        "label": "レコードレーベル",
+        "publisher": "出版社",
+        "source": "ソース",
+        "uploaded": "アップロード日時",
+        "approver": "承認者",
+        "tagList": "タグリスト"
+	},
+	"musicFilter": {
+        "orderBy": "並べ替え",
+        "title": "タイトル",
+        "rating": "評価",
+        "uploadTime": "アップロード時間",
+        "plays": "再生回数",
+        "uploader": "アップローダー",
+        "filter": "フィルター",
+        "favorites": "お気に入り",
+        "titlePlaceholder": "タイトルを検索...",
+        "uploaderPlaceholder": "アップローダーを検索...",
+        "uploaded": "アップロード済み",
+        "tags": "タグ"
+    },
+	"profile": {
+		"nav_menu": {
+            "navigation": "ナビゲーション",
+            "account": "アカウント",
+            "messages": "メッセージ",
+            "preferences": "設定",
+            "submissions": "投稿",
+            "favorites": "お気に入り",
+            "comments": "コメント",
+            "discussions": "ディスカッション",
+            "moderator": "モデレーター"
+        },
+		"overview": {
+			"username": "ユーザー名",
+			"email": "イーメイル",
+			"editBtn": "編集する",
+			"saveBtn": "Save",
+			"cancelBtn": "Cancel",
+			"id": "ID",
+			"hashId": "ハッシュID",
+			"registrationDate": "登録日",
+			"lastOnline": "最後のオンライン",
+			"clearance": "クリアランスレベル",
+			"comments": "コメント",
+			"uploads": "アップロード",
+			"favorites": "お気に入り",
+			"userBio": "ユーザー略歴"
+		},
+		"submissions": {
+            "resolution": "解決",
+            "approved": "承認済み",
+            "submitted": "送信済み",
+            "revisionNeeded": "修正が必要",
+            "terminated": "終了",
+            "revise": "修正する",
+            "message": "メッセージ"
+        }
+	},
+	"inputFeedback": {
+		"AC_000": "有効なE-メールアドレスを入力してください",
+		"AC_001": "パスワードの長さは8~64文字にする必要があります",
+		"AC_002": "ユーザー名は2~20文字である必要があります",
+		"AC_003": "ユーザー名には文字と数字のみを含める必要があります",
+		"AC_004": "2つのパスワードは一致する必要があります",
+		"AC_005": "バイオテキストは2文字から1200文字の長さでなければなりません。",
+        "AC_006": "プライバシー規約と利用規約に同意する必要があります。",
+		"AC_010": "ログインに成功しました!",
+		"AC_011": "入力フィールドを確認してください",
+		"AC_012": "登録に成功しました。 今すぐログインできます",
+		"MD_001": "音楽のタイトルは2文字から128文字の長さでなければなりません。",
+        "MD_002": "リンクは、音楽のオリジナルソースへの有効なWebアドレスでなければなりません。",
+        "MD_003": "アーティスト名は2文字から128文字の長さでなければなりません。",
+        "MD_004": "アルバム名は2文字から128文字の長さでなければなりません。",
+        "MD_005": "レコードレーベル名は2文字から128文字の長さでなければなりません。",
+        "MD_006": "パブリッシャー名は2文字から128文字の長さでなければなりません。",
+        "MD_007": "各タグは2文字から20文字の長さでなければなりません。",
+		"MD_008": "少なくとも2つのタグ（セミコロンで区切られた）を提供してください。この音楽を説明すると思われます。",
+        "MD_009": "画像はjpg、pngまたはwebp形式である必要があります。",
+        "MD_010": "音楽はmp3形式である必要があります。",
+        "MD_020": "音楽のアップロードが成功しました！",
+        "MD_033": "音楽の評価が正常に追加されました！",
+        "MD_034": "音楽の評価が正常に更新されました！",
+        "MD_035": "音楽の評価が正常に削除されました！"
+	},
+	"legal": {
+		"musicUploadCopyright": "オリジナルの作成者に適切なクレジットが与えられると共に、自由な使用と配布が許可されるクリエイティブ・コモンズ・ライセンスまたは類似のライセンスでライセンスされたコンテンツのみが受け入れられます。",
+		"musicUploadCopyrightLong": "At Melody Bits, we highly value and respect the importance of copyright laws. We only accept content that has been licensed under a creative commons license or a similar license that allows for free use and distribution as long as proper credit is given to the original creators. This helps us ensure that the content we share is legally sound and aligns with our commitment to promoting creative works in a responsible manner.",
+		"musicUploadLink": "リンクを介して提供するソースが、上記のコンテンツに関する明確な記述を行っていることを確認してください。"
+	}
+}

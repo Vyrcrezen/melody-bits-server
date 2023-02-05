@@ -12,11 +12,13 @@ const getMusicDataItemOptions = new GraphQLInputObjectType({
 
 const getMusicDataArgs: GraphQLFieldConfigArgumentMap = {
 
+    musicId: { type: GraphQLString},
     musicTitle: { type: GraphQLString },
     artistName: { type: GraphQLString },
     recordLabelName: { type: GraphQLString },
     publisherName: { type: GraphQLString },
     uploaderName: { type: GraphQLString },
+    uploaderId: { type: GraphQLInt },
 
     tags: {
         type: new GraphQLInputObjectType({

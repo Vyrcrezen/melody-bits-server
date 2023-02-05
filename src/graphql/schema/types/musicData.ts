@@ -6,6 +6,15 @@ import { RecordLabelGt } from './recordLabel';
 import { TagGt } from './tag';
 import { UserCommentGt } from './userComment';
 
+const MusicApprovalDataGt = new GraphQLObjectType({
+    name: 'MusicApprovalData',
+    fields: {
+        message: { type: GraphQLString},
+        status: { type: GraphQLString},
+        approval_time: { type: GraphQLString}
+    }
+});
+
 const MusicCardDataGt = new GraphQLObjectType({
     name: 'MusicCardData',
     fields: {
@@ -28,7 +37,8 @@ const MusicCardDataGt = new GraphQLObjectType({
         aws_root: {type: GraphQLString},
         music_size: {type: GraphQLFloat},
         comments: { type: GraphQLList(UserCommentGt) },
-        is_favorite: { type: GraphQLBoolean }
+        is_favorite: { type: GraphQLBoolean },
+        approval: { type: MusicApprovalDataGt }
     }
 });
 
@@ -39,7 +49,9 @@ const MusicPaginationDataGt = new GraphQLObjectType({
         offset: { type: GraphQLInt},
         limit: { type: GraphQLInt}
     }
-})
+});
+
+
 
 export const MusicDataGt = new GraphQLObjectType({
     name: 'MusicData',

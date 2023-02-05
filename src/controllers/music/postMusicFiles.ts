@@ -11,6 +11,7 @@ import { RecordLabel } from '../../models/sql/record_label.sql';
 import { Publisher } from '../../models/sql/publisher.sql';
 import { Tag } from "../../models/sql/tag.sql";
 import { ValidationError } from "class-validator";
+import { MusicApproval } from "../../models/sql/music_approval";
 // import { streamFromBuff } from "../../util/streamFromBuff";
 
 export const postMusicFiles: RequestHandler<any, any, { musicData: NewMusicData, validationResult: ValidationError[]}> = async (req, res, _next) => {
@@ -87,6 +88,11 @@ export const postMusicFiles: RequestHandler<any, any, { musicData: NewMusicData,
 
         const newMusic = Music.build(partialData);
         await newMusic.save();
+
+        const musicApproval = new MusicApproval({ music_id: newMusic.id, status: 1, message: 'New upload' });
+        await musicApproval.save();
+
+        //await newMusic.$create('approvals', musicApproval);
 
         const tagsToAdd: Tag[] = [];
         for (const tagItem of musicData.tags) {

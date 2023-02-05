@@ -10,11 +10,15 @@ import { getMusicCover } from "../controllers/music/getMusicCover";
 
 import { verifyMusicData } from "../controllers/music/verifyMusicData";
 import { getMusicFile } from "../controllers/music/getMusicFile";
+import { editMusicFiles } from "../controllers/music/editMusicFiles";
+import { verifyUploadEligibility } from "../controllers/music/verifyUploadEligibility";
+import { verifyEditEligibility } from "../controllers/music/verifyEditEligibility";
 
 export const router = Router();
 
 router.post(
     "/post-new",
+    verifyUploadEligibility,
     multerMusicFiles(),
     verifyMusicData,
     // multer({ dest: path.resolve(rootDir, "data", "music_uploads"), fileFilter(_req, file, callback) {
@@ -35,6 +39,15 @@ router.post(
     //     { name: "music_file", maxCount: 1 },
     // ]),
     postMusicFiles
+);
+
+router.post(
+    "/edit/:musicId",
+    verifyUploadEligibility,
+    verifyEditEligibility,
+    multerMusicFiles(),
+    verifyMusicData,
+    editMusicFiles
 );
 
 router.get('/cover-image/:musicId', getMusicCover());

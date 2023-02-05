@@ -12,6 +12,8 @@ import { router as musicFileRouter } from './routes/musicFiles';
 import { configCors } from "./controllers/general/configCors";
 import { errorReqHandler } from "./controllers/general/errorReqGeneral";
 import { acceptOptions } from "./controllers/general/acceptOptins";
+import path from "path";
+import { rootDir } from "./util/rootDir";
 
 // Reading .env into process.env
 config();
@@ -40,6 +42,12 @@ app.use(errorReqHandler);
 sequelize.sync({
 
 });
+
+// Makeshift content server setup
+app.use('/', express.static(path.join(rootDir, '/out/static'), { extensions: ['html'] }));
+app.use('/', (_req, res) => { res.sendFile(path.join(rootDir, '/out/static/frontend-router.html')); });
+
+// ###########################
 
 app.listen(process.env.PORT);
 

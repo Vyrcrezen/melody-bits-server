@@ -4,6 +4,7 @@ import {
     IsDate,
     IsIn,
     IsNumber,
+    IsNumberString,
     IsOptional,
     IsString,
     Length,
@@ -42,6 +43,11 @@ class Tags {
 }
 
 class getMusicDataArgType {
+
+    @IsNumberString()
+    @IsOptional()
+    musicId?: string;
+
     @Length(2, 128)
     @IsString()
     @IsOptional()
@@ -66,6 +72,10 @@ class getMusicDataArgType {
     @IsString()
     @IsOptional()
     uploaderName?: string;
+
+    @IsNumber()
+    @IsOptional()
+    uploaderId?: number;
 
     @ValidateNested()
     tags?: Tags;
@@ -115,11 +125,13 @@ class getMusicDataArgType {
     pageNum?: number;
 
     constructor(filters: getMusicDataArgType) {
+        this.musicId = filters.musicId;
         this.musicTitle = filters.musicTitle;
         this.artistName = filters.artistName;
         this.recordLabelName = filters.recordLabelName;
         this.publisherName = filters.publisherName;
         this.uploaderName = filters.uploaderName;
+        this.uploaderId = filters.uploaderId;
         this.tags = filters.tags ? new Tags(filters.tags) : undefined;
         this.uploadDateMin = filters.uploadDateMin;
         this.uploadDateMax = filters.uploadDateMax;
@@ -161,7 +173,8 @@ export const getMusicData = async (
         }
 
         if ((filters.isPendingApproval && !userClearance) ||
-            (filters.isPendingApproval && userClearance && ( userClearance < 1 || 2 < userClearance ))) {
+            ((filters.isPendingApproval && userClearance && ( userClearance < 1 || 2 < userClearance )) &&
+            (filters.isPendingApproval && context.jwtAuth?.user_id && ( context.jwtAuth?.user_id !== filters.uploaderId )))) {
                 console.log('Unauthorized')
                 console.log(userClearance)
             return {
@@ -184,26 +197,40 @@ export const getMusicData = async (
         console.log('filters.approvalStatusList');
         console.log(filters.approvalStatusList);
         const approvalStatusList = filters.approvalStatusList ? filters.approvalStatusList.length === 0 ? [0, 1, 2, 3] : filters.approvalStatusList : undefined;
-        // const approvalStatusList = filters.approvalStatusList ? filters.approvalStatusList.filter(item => ![0, 1, 2, 3].includes(item) ) : [];
-
-        // console.log('filters.isPendingApproval');
-        // console.log(filters.isPendingApproval);
 
         const musicWhereOptions: WhereOptions<any> = {
             [Op.and]: {
-                approver_id: {
-                    [filters.isPendingApproval ? Op.is : Op.not]: null,
-                },
+                // approver_id: {
+                //     [filters.isPendingApproval ? Op.is : Op.not]: null,
+                // },
+                approver_id: filters.isPendingApproval
+                    ? {
+                          [Op.or]: [
+                            { [Op.eq]: null },
+                            { [Op.not]: null }
+                          ],
+                      }
+                    : {
+                          [Op.not]: null,
+                      },
                 [Op.or]:
+                    filters.musicId ||
                     filters.musicTitle ||
+                    filters.uploaderId ||
                     filters.uploadDateMin ||
                     filters.uploadDateMax ||
                     filters.playedMin ||
                     filters.playedMax
                         ? Object.assign(
                               {},
+                              filters.musicId
+                                  ? { id: filters.musicId }
+                                  : {},
                               filters.musicTitle
                                   ? { title: { [Op.substring]: filters.musicTitle } }
+                                  : {},
+                            filters.uploaderId
+                                  ? { uploader_id: filters.uploaderId }
                                   : {},
                               filters.uploadDateMin || filters.uploadDateMax
                                   ? {
@@ -377,7 +404,7 @@ export const getMusicData = async (
 
         console.log(matchedMusicCount);
 
-        const musicLimit = 2;
+        const musicLimit = 6;
         const musicOffset = filters.pageNum ?? 0 * musicLimit;
 
         const musicData = await Music.findAll({
@@ -390,7 +417,10 @@ export const getMusicData = async (
             include: musicIncludeable,
         });
 
-        const preparedData = getPreparedMusicData(musicData, context.jwtAuth?.user_id);
+        console.log('approvals');
+        musicData.forEach(item => console.log(item.approvals))
+
+        const preparedData = getPreparedMusicData(musicData, context.jwtAuth?.user_id, filters.isPendingApproval);
 
         console.log(`musicOffset: ${musicOffset}`);
 

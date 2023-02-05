@@ -1,6 +1,6 @@
 import { Music } from "../models/sql/music.sql";
 
-export function getPreparedMusicData(musicData: Music[], requesterId?: number) {
+export function getPreparedMusicData(musicData: Music[], requesterId?: number, isPendingApproval?: boolean) {
     return musicData.map(async (item) => {
         return {
             id: item.id,
@@ -52,7 +52,14 @@ export function getPreparedMusicData(musicData: Music[], requesterId?: number) {
                     deleted_at: null,
                 };
             }),
-            is_favorite: requesterId ? !!item.favored_by?.find(user => user.id === requesterId) : false
+            is_favorite: requesterId ? !!item.favored_by?.find(user => user.id === requesterId) : false,
+            approval: isPendingApproval
+            ? {
+                message: ((item.approvals ?? [])[0] ?? {}).message,
+                status: ((item.approvals ?? [])[0] ?? {}).status,
+                approval_time: ((item.approvals ?? [])[0] ?? {}).approval_time
+            }
+            : undefined
         };
     });
 }

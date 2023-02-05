@@ -134,7 +134,9 @@ export class Music extends Model {
     music_size?: number;
 
     @IsNumeric
-    @Column
+    @Column({
+        allowNull: true
+    })
     @ForeignKey(() => UserAccount)
     approver_id?: number;
 

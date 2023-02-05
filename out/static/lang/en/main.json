@@ -1,0 +1,67 @@
+{
+    "lang": "en",
+    "nav": {
+        "home": "Home",
+        "browse": "Browse",
+        "upload": "Upload",
+        "approve": "Approve",
+        "discussions": "Discussions",
+        "login": "Login",
+
+        "anonUser": {
+            "email": "E-mail",
+            "password": "Pasword",
+            "login": "Login",
+            "register": "Register"
+        },
+
+        "loggedUser": {
+            "profile": "Profile",
+            "submissions": "Submissions",
+            "messages": "Messages",
+            "favorites": "Favorites",
+            "logout": "Logout"
+        }
+    },
+    "loginForm": {
+        "login": "Login",
+        "email": "E-mail address",
+        "password": "Password",
+        "loginBtn": "Login"
+    },
+    "registerForm": {
+        "username": "Username",
+        "register": "Register",
+        "email": "E-mail address",
+        "password": "Password",
+        "rePassword": "Password again",
+        "registerBtn": "Register"
+    },
+    "profile": {
+        "overview": {
+            "username": "Username",
+            "email": "E-mail address",
+            "editBtn": "Edit",
+            "id": "id",
+            "hashId": "Hash id",
+            "registrationDate": "Registration date",
+            "lastOnline": "Last online",
+            "clearance": "Clearance level",
+            "comments": "Comments",
+            "uploads": "Uploads",
+            "favorites": "Favorites",
+            "userBio": "User bio"
+        }
+    },
+    "inputFeedback": {
+        "AC_000": "Please provide a valid e-mail address",
+        "AC_001": "Password must be between 8 and 64 characters long.",
+        "AC_002": "Username must be between 2 and 20 characters long.",
+        "AC_003": "Username must contain only letters and numbers",
+        "AC_004": "The two passwords must match",
+
+        "AC_010": "Login successful!",
+        "AC_011": "Please verify the input fields",
+        "AC_012": "Registration successful. You can login now"
+    }
+}

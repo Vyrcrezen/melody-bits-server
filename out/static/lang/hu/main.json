@@ -1,0 +1,161 @@
+{
+	"lang": "hu",
+	"numPostfix": {
+		"deka": "n/u",
+		"hecto": "n/u",
+		"kilo": "ezer",
+		"mega": "millió"
+	},
+	"nav": {
+		"home": "Főmenü",
+		"browse": "Böngészés",
+		"upload": "Feltöltés",
+		"approve": "Jóváhagyás",
+		"discussions": "Fórum",
+		"login": "Bejelentkezés",
+		"anonUser": {
+			"email": "E-mail",
+			"password": "Jelszó",
+			"login": "Bejelentkezés",
+			"register": "Regisztrálás"
+		},
+		"loggedUser": {
+			"profile": "Profil",
+			"submissions": "Beküldések",
+			"messages": "Üzenetek",
+			"favorites": "Kedvencek",
+			"logout": "Kijelentkezés"
+		}
+	},
+	"loginForm": {
+		"login": "Bejelentkezés",
+		"email": "E-mail cim",
+		"password": "Jelszó",
+		"loginBtn": "Bejelentkezés"
+	},
+	"registerForm": {
+		"username": "Felhasználónév",
+		"register": "Regisztráció",
+		"email": "E-mail cim",
+		"password": "Jelszó",
+		"rePassword": "Jelszó újra",
+		"registerBtn": "Regisztráció"
+	},
+	"musicUploadForm": {
+		"selectImageBtn": "Kép kiválasztása",
+		"selectMusicBtn": "Zene kiválasztása",
+		"title": "Cím",
+		"link": "Link",
+		"artist": "Szerző",
+		"tags": "Cimkék",
+		"album": "Album",
+		"recordLabel": "Lemezkiadó",
+		"publisher": "Kiadó",
+		"uploadMusicBtn": "Zene feltöltése",
+		"editMusicBtn": "Változások mentése"
+	},
+	"musicCard": {
+		"menu": {
+			"overview": "Áttekintés",
+			"details": "Részletek",
+			"comments": "Kommentek",
+			"report": "Bejelentés",
+			"edit": "Szerkesztés",
+			"delete": "Törlés"
+		},
+		"plays": "lejtszás",
+		"comments": "Kommentek",
+		"uploader": "Feltöltő",
+		"title": "Cím",
+		"artist": "Szerző",
+		"label": "Lemezkiadó",
+		"publisher": "Kiadó",
+		"source": "Forrás",
+		"uploaded": "Feltöltve",
+		"approver": "Jóváhagyta",
+		"tagList": "Cimkék"
+	},
+	"musicFilter": {
+		"orderBy": "Rendezés",
+		"title": "Cím",
+		"rating": "Értékelés",
+		"uploadTime": "Feltöltés ideje",
+		"plays": "Lejátszások",
+		"uploader": "Feltöltő",
+		"filter": "Szűrés",
+		"favorites": "Kedvencek",
+		"titlePlaceholder": "Keresés cím szerint...",
+		"uploaderPlaceholder": "Keresés feltöltő szerint...",
+		"uploaded": "Feltöltve",
+		"tags": "Cimkék"
+	},
+	"profile": {
+		"nav_menu": {
+			"navigation": "Navigáció",
+			"account": "Fiók",
+			"messages": "Üzenetek",
+			"preferences": "Beállitások",
+			"submissions": "Feltöltések",
+			"favorites": "Kedvencek",
+			"comments": "Kommentek",
+			"discussions": "Megbeszélések",
+			"moderator": "Moderátor"
+		},
+		"overview": {
+			"username": "Felhasználónév",
+			"email": "E-mail cím",
+			"editBtn": "Szerkesztés",
+			"saveBtn": "Mentése",
+			"cancelBtn": "Vissza",
+			"id": "id",
+			"hashId": "Hash id",
+			"registrationDate": "Regisztráció dátuma",
+			"lastOnline": "Utoljára online",
+			"clearance": "Hozzáférési szint",
+			"comments": "Kommentek",
+			"uploads": "Feltöltések",
+			"favorites": "Kedvencek",
+			"userBio": "Felhasználó leírás"
+		},
+		"submissions": {
+			"resolution": "Kimenet",
+			"approved": "Jóváhagyva",
+			"submitted": "Elküldve",
+			"revisionNeeded": "Módosítás szükséges",
+			"terminated": "Felfüggesztve",
+			"revise": "Módosít",
+			"message": "Megjegyzés"
+		}
+	},
+	"inputFeedback": {
+		"AC_000": "Kérem adjon meg egy valós e-mail cimet",
+		"AC_001": "A jelszó 8 és 64 karakter hosszú kell legyen",
+		"AC_002": "A felhasználónév 3 és 20 hosszúság közt kell legyen ",
+		"AC_003": "A felhasználónév csak betűkből és számokból állhat",
+		"AC_004": "A két jelszónak meg kell egyeznie",
+		"AC_005": "A Felhasználói leírás 2 és 1200 karatker hosszúság közt kell legyen.",
+		"AC_006": "A regisztrációhoz el kell fogadni a Felhasználási Feltételeket és a Adatkezelési Feltételeket.",
+		"AC_010": "Sikeres bejelentkezés!",
+		"AC_011": "Kérem ellenőrizze a beviteli mezőket",
+		"AC_012": "Sikeres regisztráció, most már bejelntkezhet",
+		"MD_001": "A zene címe 2 és 128 karakter hosszú kell legyen.",
+		"MD_002": "Link must be a valid web address, linking to the original source of the music.",
+        "MD_003": "Az előadó neve 2 és 128 karakter közötti hosszúságú kell legyen.",
+        "MD_004": "Az album neve 2 és 128 karakter közötti hosszúságú kell legyen.",
+        "MD_005": "A lemezkiadó neve 2 és 128 karakter közötti hosszúságú kell legyen.",
+        "MD_006": "A kiadó neve 2 és 128 karakter közötti hosszúságú kell legyen.",
+        "MD_007": "Minden címke 2 és 20 karakter közötti hosszúságú kell legyen.",
+        "MD_008": "Legalább 2 címkét - pontosvessző (;) segítségével elválasztva - kell megadni, amelyek jól jellemezik a zenét.",
+        "MD_009": "A kép jpg, png vagy webp formátumú kell legyen.",
+        "MD_010": "A zene mp3 formátumú kell legyen.",
+        "MD_020": "A zene feltöltése sikeres!",
+        "MD_033": "A zene értékelése sikeresen hozzáadva!",
+        "MD_034": "A zene értékelése sikeresen frissítve!",
+        "MD_035": "A zene értékelése sikeresen eltávolítva!"
+        },
+	"legal": {
+		"musicUploadCopyright": "Csak olyan tartalmat fogadunk el, amely a Creative Commons licenc vagy hasonló licenc alá tartozik, amely lehetővé teszi a szabad felhasználást és terjesztést, amennyiben megfelelően elismerik az eredeti alkotókat.",
+		"musicUploadCopyrightLong": "At Melody Bits, we highly value and respect the importance of copyright laws. We only accept content that has been licensed under a creative commons license or a similar license that allows for free use and distribution as long as proper credit is given to the original creators. This helps us ensure that the content we share is legally sound and aligns with our commitment to promoting creative works in a responsible manner.",
+		"musicUploadLink": "A megadott link olyan oldalra kell hogy mutasson, ahol egyértelműen látszik hogy a zene a fenti licensszel rendelkezik."
+	}
+}

@@ -5,7 +5,6 @@ import { VblNewMusicData } from "../../models/music/vblNewMusicData";
 import { UserAccount } from "../../models/sql/user_account.sql";
 
 export const verifyMusicData: RequestHandler = async (req, _res, next) => {
-
     try {
         if (req.jwtAuth?.user_id) {
             UserAccount.update({ last_online: new Date(), },
