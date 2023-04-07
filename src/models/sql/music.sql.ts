@@ -23,6 +23,9 @@ export class Music extends Model {
     @BelongsToMany(() => Tag, () => TagPairing)
     tags?: Tag[];
 
+    @BelongsToMany(() => Tag, () => TagPairing)
+    matching_tags?: Tag[];
+
     @BelongsToMany(() => UserAccount, () => UserFavoriteMusic)
     favored_by?: UserAccount[];
 

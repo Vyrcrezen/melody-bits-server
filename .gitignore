@@ -1,6 +1,8 @@
 node_modules/
 out/src
 out/test
-data/
 package-lock.json
 .env
+
+.elasticbeanstalk/*
+.ebextensions/*

@@ -1,0 +1,202 @@
+{
+  "lang": "de",
+  "numPostfix": {
+    "deka": "n/u",
+    "hecto": "n/u",
+    "kilo": "k",
+    "mega": "million"
+  },
+  "nav": {
+    "home": "Startseite",
+    "browse": "Durchsuchen",
+    "upload": "Hochladen",
+    "approve": "Genehmigen",
+    "discussions": "Diskussionen",
+    "character": "Charakter",
+    "login": "Anmelden",
+
+    "anonUser": {
+      "email": "E-Mail",
+      "password": "Passwort",
+      "login": "Anmelden",
+      "register": "Registrieren"
+    },
+
+    "loggedUser": {
+      "profile": "Profil",
+      "submissions": "Einsendungen",
+      "messages": "Nachrichten",
+      "favorites": "Favoriten",
+      "logout": "Abmelden"
+    }
+  },
+  "loginForm": {
+    "login": "Anmelden",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "loginBtn": "Anmelden"
+  },
+  "registerForm": {
+    "username": "Benutzername",
+    "register": "Registrieren",
+    "email": "E-Mail-Adresse",
+    "password": "Passwort",
+    "rePassword": "Passwort erneut eingeben",
+    "registerBtn": "Registrieren"
+  },
+  "musicUploadForm": {
+    "selectImageBtn": "Bild auswählen",
+    "selectMusicBtn": "Musik auswählen",
+    "title": "Titel",
+    "link": "Link",
+    "artist": "Künstler",
+    "tags": "Tags",
+    "album": "Album",
+    "recordLabel": "Plattenlabel",
+    "publisher": "Verleger",
+    "uploadMusicBtn": "Musik hochladen",
+    "editMusicBtn": "Änderungen speichern"
+  },
+  "musicCard": {
+    "menu": {
+      "overview": "Übersicht",
+      "details": "Details",
+      "comments": "Kommentare",
+      "report": "Melden",
+      "edit": "Bearbeiten",
+      "delete": "Löschen"
+    },
+    "plays": "Wiedergaben",
+    "comments": "Kommentare",
+
+    "uploader": "Hochgeladen von",
+    "title": "Titel",
+    "artist": "Künstler",
+    "label": "Plattenlabel",
+    "publisher": "Verleger",
+    "source": "Quelle",
+    "uploaded": "Hochgeladen",
+    "approver": "Genehmigt von",
+    "tagList": "Tag-Liste"
+  },
+  "musicFilter": {
+    "orderBy": "Sortieren nach",
+    "title": "Titel",
+    "rating": "Bewertung",
+    "uploadTime": "Hochladedatum",
+    "plays": "Wiedergaben",
+    "uploader": "Hochgeladen von",
+
+    "filter": "Filtern",
+    "favorites": "Favoriten",
+    "titlePlaceholder": "Titel suchen...",
+    "uploaderPlaceholder": "Hochgeladen von suchen...",
+    "uploaded": "Hochgeladen",
+    "tags": "Tags"
+  },
+  "index": {
+    "highlights": "Highlights",
+    "changes": "Änderungen",
+    "latestAdditions": "Neueste Ergänzungen",
+
+    "carousel": {
+      "next": "Weiter",
+      "previous": "Zurück",
+
+      "langSlide": {
+        "title": "In mehreren Sprachen verfügbar",
+        "description": "Unsere Musik-Plattform wurde so gestaltet, dass sie für Menschen aus aller Welt zugänglich ist. Jetzt ist sie in Deutsch, Englisch, Spanisch, Ungarisch und Japanisch verfügbar!"
+      },
+      "mobileSlide": {
+        "title": "Optimiert für Mobil- und Desktopgeräte",
+        "description": "Egal, ob Sie auf Ihrem Handy oder Ihrem Computer sind, Sie werden eine einfache und angenehme Erfahrung haben, wenn Sie sich auf unserer Website bewegen und neue Musik entdecken."
+      },
+      "uploadeSlide": {
+        "title": "Musik hochladen und teilen",
+        "description": "Unsere Musik-Plattform ermöglicht es Ihnen, Ihre eigene Musik mit der Welt zu teilen. Egal, ob Sie Musiker sind und Ihre eigenen Kompositionen teilen möchten, oder einfach nur einige Ihrer Lieblingstracks präsentieren möchten, unsere Plattform macht es Ihnen leicht, Ihre Musik dort draußen zu bringen."
+      },
+      "favoriteSlide": {
+        "title": "Bewerten und Verfolgen Sie Ihre Lieblingsmusik",
+        "description": "Mit unserem Bewertungs- und Tracking-System können Sie einfach Ihre Lieblingssongs im Blick behalten und Ihre Empfehlungen mit anderen teilen."
+      },
+      "characterSlide": {
+        "title": "Jetzt mit Tabletop-Charakterbogen",
+        "description": "Unsere Musik-Plattform kommt jetzt mit einem Feature für Tabletop-Charakterbögen! Egal, ob Sie Fan von Dungeons and Dragons, Pathfinder oder einem anderen Tabletop-Spiel sind, Sie können jetzt Ihren eigenen Charakterbogen direkt auf unserer Website erstellen und anpassen."
+      }
+    }
+  },
+  "profile": {
+    "nav_menu": {
+      "navigation": "Navigation",
+      "account": "Konto",
+      "messages": "Nachrichten",
+      "preferences": "Einstellungen",
+      "submissions": "Einreichungen",
+      "favorites": "Favoriten",
+      "comments": "Kommentare",
+      "discussions": "Diskussionen",
+      "moderator": "Moderator"
+    },
+    "overview": {
+      "username": "Benutzername",
+      "email": "E-Mail-Adresse",
+      "editBtn": "Bearbeiten",
+      "saveBtn": "Speichern",
+      "cancelBtn": "Abbrechen",
+      "id": "ID",
+      "hashId": "Hash-ID",
+      "registrationDate": "Registrierungsdatum",
+      "lastOnline": "Zuletzt online",
+      "clearance": "Freigabestufe",
+      "comments": "Kommentare",
+      "uploads": "Hochgeladene Musik",
+      "favorites": "Favoriten",
+      "userBio": "Benutzerbiografie"
+    },
+    "submissions": {
+      "resolution": "Auflösung",
+      "approved": "Genehmigt",
+      "submitted": "Eingereicht",
+      "revisionNeeded": "Überarbeitung erforderlich",
+      "terminated": "Beendet",
+      "revise": "Überarbeiten",
+      "message": "Nachricht"
+    }
+  },
+  "inputFeedback": {
+    "AC_000": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "AC_001": "Das Passwort muss zwischen 8 und 64 Zeichen lang sein.",
+    "AC_002": "Der Benutzername muss zwischen 2 und 20 Zeichen lang sein.",
+    "AC_003": "Der Benutzername darf nur Buchstaben und Zahlen enthalten.",
+    "AC_004": "Die beiden Passwörter müssen übereinstimmen.",
+    "AC_005": "Die Bio-Text muss zwischen 2 und 1200 Zeichen lang sein.",
+    "AC_006": "Sie müssen die Datenschutzbestimmungen und die Nutzungsbedingungen akzeptieren, um sich zu registrieren.",
+
+    "AC_010": "Anmeldung erfolgreich!",
+    "AC_011": "Bitte überprüfen Sie die Eingabefelder.",
+    "AC_012": "Registrierung erfolgreich. Sie können sich jetzt einloggen.",
+
+    "MD_001": "Der Musiktitel muss zwischen 2 und 128 Zeichen lang sein.",
+    "MD_002": "Der Link muss eine gültige Webadresse sein und auf die Quelle der Musik verweisen.",
+    "MD_003": "Der Künstlername muss zwischen 2 und 128 Zeichen lang sein.",
+    "MD_004": "Der Albumname muss zwischen 2 und 128 Zeichen lang sein.",
+    "MD_005": "Der Name des Plattenlabels muss zwischen 2 und 128 Zeichen lang sein.",
+    "MD_006": "Der Name des Verlags muss zwischen 2 und 128 Zeichen lang sein.",
+    "MD_007": "Jedes Tag muss zwischen 2 und 20 Zeichen lang sein.",
+    "MD_008": "Bitte geben Sie mindestens 2 Tags an, die durch ein Semikolon ( ; ) getrennt werden und diese Musik gut beschreiben.",
+    "MD_009": "Das Bild muss im jpg-, png- oder webp-Format vorliegen.",
+    "MD_010": "Die Musik muss im mp3-Format vorliegen.",
+
+    "MD_020": "Musikupload erfolgreich!",
+
+    "MD_033": "Bewertung erfolgreich hinzugefügt!",
+    "MD_034": "Bewertung erfolgreich aktualisiert!",
+    "MD_035": "Bewertung erfolgreich entfernt!"
+
+  },
+  "legal": {
+    "musicUploadCopyright": "Wir akzeptieren nur Inhalte, die unter einer Creative-Commons-Lizenz oder einer ähnlichen Lizenz lizenziert wurden, die eine kostenlose Nutzung und Verbreitung ermöglicht, solange den ursprünglichen Urhebern angemessene Anerkennung zuteilwird.",
+    "musicUploadCopyrightLong": "Bei Melody Bits schätzen wir die Bedeutung und Wichtigkeit von Urheberrechten sehr hoch. Wir akzeptieren nur Inhalte, die unter einer Creative-Commons-Lizenz oder einer ähnlichen Lizenz lizenziert wurden, die eine kostenlose Nutzung und Verbreitung ermöglicht, solange den ursprünglichen Urhebern angemessene Anerkennung zuteilwird. Dadurch stellen wir sicher, dass die von uns geteilten Inhalte rechtlich einwandfrei sind und unserem Engagement zur Förderung kreativer Werke auf verantwortungsvolle Weise entsprechen.",
+    "musicUploadLink": "Stellen Sie bitte sicher, dass die Quelle, die Sie über den Link bereitstellen, die oben genannten Bedingungen für den Inhalt klar darstellt."
+    }
+}

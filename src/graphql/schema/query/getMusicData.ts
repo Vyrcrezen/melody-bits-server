@@ -30,6 +30,8 @@ const getMusicDataArgs: GraphQLFieldConfigArgumentMap = {
         }),
     },
 
+    limit: { type: GraphQLInt },
+
     uploadDateMin: { type: GraphQLString },
     uploadDateMax: { type: GraphQLString },
 

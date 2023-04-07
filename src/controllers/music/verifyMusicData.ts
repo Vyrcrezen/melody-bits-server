@@ -31,8 +31,8 @@ export const verifyMusicData: RequestHandler = async (req, _res, next) => {
 
         const validationResult = await validate(musicData);
 
-        console.log(req.body);
-        console.log(req.files);
+        // console.log(req.body);
+        // console.log(req.files);
 
         req.body.validationResult = validationResult;
         req.body.musicData = musicData;

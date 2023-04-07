@@ -80,6 +80,10 @@ class getMusicDataArgType {
     @ValidateNested()
     tags?: Tags;
 
+    @IsNumber()
+    @IsOptional()
+    limit?: number;
+
     @IsDate()
     @IsOptional()
     uploadDateMin?: string;
@@ -133,6 +137,7 @@ class getMusicDataArgType {
         this.uploaderName = filters.uploaderName;
         this.uploaderId = filters.uploaderId;
         this.tags = filters.tags ? new Tags(filters.tags) : undefined;
+        this.limit = filters.limit;
         this.uploadDateMin = filters.uploadDateMin;
         this.uploadDateMax = filters.uploadDateMax;
         this.playedMin = filters.playedMin;
@@ -312,7 +317,7 @@ export const getMusicData = async (
             },
             {
                 model: Tag,
-                as: "tags",
+                as: "matching_tags",
 
                 where: filters.tags?.values
                     ? {
@@ -322,6 +327,11 @@ export const getMusicData = async (
                           },
                       }
                     : undefined,
+                through: {},
+            },
+            {
+                model: Tag,
+                as: "tags",
                 through: {},
             },
             {
@@ -404,7 +414,7 @@ export const getMusicData = async (
 
         console.log(matchedMusicCount);
 
-        const musicLimit = 6;
+        const musicLimit = filters.limit && filters.limit < 6 ? filters.limit : 6;
         const musicOffset = filters.pageNum ?? 0 * musicLimit;
 
         const musicData = await Music.findAll({

@@ -1,0 +1,202 @@
+{
+  "lang": "es",
+  "numPostfix": {
+    "deka": "n/u",
+    "hecto": "n/u",
+    "kilo": "k",
+    "mega": "million"
+  },
+  "nav": {
+    "home": "Inicio",
+    "browse": "Explorar",
+    "upload": "Subir",
+    "approve": "Aprobar",
+    "discussions": "Discusiones",
+    "character": "Personaje",
+    "login": "Iniciar sesión",
+
+    "anonUser": {
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "login": "Iniciar sesión",
+      "register": "Registrarse"
+    },
+
+    "loggedUser": {
+      "profile": "Perfil",
+      "submissions": "Envíos",
+      "messages": "Mensajes",
+      "favorites": "Favoritos",
+      "logout": "Cerrar sesión"
+    }
+  },
+  "loginForm": {
+    "login": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "loginBtn": "Iniciar sesión"
+  },
+
+  "registerForm": {
+    "username": "Nombre de usuario",
+    "register": "Registrarse",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "rePassword": "Repetir contraseña",
+    "registerBtn": "Registrarse"
+  },
+  "musicUploadForm": {
+    "selectImageBtn": "Seleccionar imagen",
+    "selectMusicBtn": "Seleccionar música",
+    "title": "Título",
+    "link": "Enlace",
+    "artist": "Artista",
+    "tags": "Etiquetas",
+    "album": "Álbum",
+    "recordLabel": "Discográfica",
+    "publisher": "Editor",
+    "uploadMusicBtn": "Subir música",
+    "editMusicBtn": "Guardar cambios"
+  },
+  "musicCard": {
+    "menu": {
+      "overview": "Visión general",
+      "details": "Detalles",
+      "comments": "Comentarios",
+      "report": "Reportar",
+      "edit": "Editar",
+      "delete": "Eliminar"
+    },
+    "plays": "reproducciones",
+    "comments": "Comentarios",
+
+    "uploader": "Cargador",
+    "title": "Título",
+    "artist": "Artista",
+    "label": "Discográfica",
+    "publisher": "Editor",
+    "source": "Fuente",
+    "uploaded": "Subido",
+    "approver": "Aprobador",
+    "tagList": "Lista de etiquetas"
+  },
+  "musicFilter": {
+    "orderBy": "Ordenar por",
+    "title": "Título",
+    "rating": "Calificación",
+    "uploadTime": "Tiempo de subida",
+    "plays": "Reproducciones",
+    "uploader": "Cargador",
+
+    "filter": "Filtrar",
+    "favorites": "Favoritos",
+    "titlePlaceholder": "Buscar por título...",
+    "uploaderPlaceholder": "Buscar por cargador...",
+    "uploaded": "Subido",
+    "tags": "Etiquetas"
+  },
+  "index": {
+    "highlights": "Destacados",
+    "changes": "Cambios",
+    "latestAdditions": "Últimas Adiciones",
+
+    "carousel": {
+      "next": "Siguiente",
+      "previous": "Anterior",
+
+      "langSlide": {
+        "title": "Disponible en muchos idiomas",
+        "description": "Nuestra página web de música está diseñada para ser accesible a personas de todo el mundo. ¡Ahora está disponible en alemán, inglés, español, húngaro y japonés!"
+      },
+      "mobileSlide": {
+        "title": "Optimizado para dispositivos móviles y de escritorio",
+        "description": "Ya sea en tu teléfono o en tu computadora, tendrás una experiencia fácil y agradable navegando por nuestra página web y descubriendo nueva música."
+      },
+      "uploadeSlide": {
+        "title": "Sube y comparte música",
+        "description": "Nuestra página web de música te permite subir y compartir tu propia música con el mundo. Ya seas un músico que busca compartir tus composiciones originales, o simplemente quieres mostrar algunas de tus canciones favoritas, nuestra plataforma te facilita la tarea de hacer que tu música esté disponible para todos."
+      },
+      "favoriteSlide": {
+        "title": "Califica y lleva un registro de tu música favorita",
+        "description": "Con nuestro sistema de calificación y seguimiento, puedes llevar un registro fácilmente de tus canciones favoritas y compartir tus recomendaciones con otros usuarios."
+      },
+      "characterSlide": {
+        "title": "Ahora con hojas de personajes de juegos de mesa",
+        "description": "¡Nuestra página web de música ahora cuenta con la función de hojas de personajes de juegos de mesa! Ya seas un fanático de Dungeons and Dragons, Pathfinder o cualquier otro juego de mesa, ahora puedes crear y personalizar tu propia hoja de personaje directamente en nuestra página web."
+      }
+    }
+  },
+  "profile": {
+    "nav_menu": {
+      "navigation": "Navegación",
+      "account": "Cuenta",
+      "messages": "Mensajes",
+      "preferences": "Preferencias",
+      "submissions": "Envíos",
+      "favorites": "Favoritos",
+      "comments": "Comentarios",
+      "discussions": "Discusiones",
+      "moderator": "Moderador"
+    },
+    "overview": {
+      "username": "Nombre de usuario",
+      "email": "Dirección de correo electrónico",
+      "editBtn": "Editar",
+      "saveBtn": "Guardar",
+      "cancelBtn": "Cancelar",
+      "id": "Id",
+      "hashId": "Id hash",
+      "registrationDate": "Fecha de registro",
+      "lastOnline": "Última conexión",
+      "clearance": "Nivel de autorización",
+      "comments": "Comentarios",
+      "uploads": "Cargas",
+      "favorites": "Favoritos",
+      "userBio": "Biografía del usuario"
+    },
+    "submissions": {
+      "resolution": "Resolución",
+      "approved": "Aprobado",
+      "submitted": "Enviado",
+      "revisionNeeded": "Requiere revisión",
+      "terminated": "Terminado",
+      "revise": "Revisar",
+      "message": "Mensaje"
+    }
+  },
+  "inputFeedback": {
+    "AC_000": "Por favor, proporcione una dirección de correo electrónico válida.",
+    "AC_001": "La contraseña debe tener entre 8 y 64 caracteres.",
+    "AC_002": "El nombre de usuario debe tener entre 2 y 20 caracteres.",
+    "AC_003": "El nombre de usuario solo puede contener letras y números.",
+    "AC_004": "Las dos contraseñas deben coincidir.",
+    "AC_005": "El texto de la biografía debe tener entre 2 y 1200 caracteres.",
+    "AC_006": "Debe aceptar la Política de privacidad y los Términos y reglas para registrarse.",
+
+    "AC_010": "¡Inicio de sesión exitoso!",
+    "AC_011": "Verifique los campos de entrada, por favor.",
+    "AC_012": "Registro exitoso. Ahora puede iniciar sesión.",
+
+    "MD_001": "El título de la música debe tener entre 2 y 128 caracteres.",
+    "MD_002": "El enlace debe ser una dirección web válida, que enlace a la fuente original de la música.",
+    "MD_003": "El nombre del artista debe tener entre 2 y 128 caracteres.",
+    "MD_004": "El nombre del álbum debe tener entre 2 y 128 caracteres.",
+    "MD_005": "El nombre de la discográfica debe tener entre 2 y 128 caracteres.",
+    "MD_006": "El nombre del editor debe tener entre 2 y 128 caracteres.",
+    "MD_007": "Cada etiqueta debe tener entre 2 y 20 caracteres.",
+    "MD_008": "Por favor, proporcione al menos 2 etiquetas - separadas por punto y coma ( ; ) - que describan bien esta música.",
+    "MD_009": "La imagen debe estar en formato jpg, png o webp.",
+    "MD_010": "La música debe estar en formato mp3.",
+
+    "MD_020": "¡La carga de la música se realizó con éxito!",
+
+    "MD_033": "¡La valoración de la música se ha agregado correctamente!",
+    "MD_034": "¡La valoración de la música se ha actualizado correctamente!",
+    "MD_035": "¡La valoración de la música se ha eliminado correctamente!"
+  },
+  "legal": {
+    "musicUploadCopyright": "Solo aceptamos contenido que haya sido licenciado bajo una licencia Creative Commons o una licencia similar que permita su uso y distribución gratuitos siempre que se otorgue el crédito adecuado a los creadores originales.",
+    "musicUploadCopyrightLong": "En Melody Bits, valoramos y respetamos enormemente la importancia de las leyes de derechos de autor. Solo aceptamos contenido que haya sido licenciado bajo una licencia Creative Commons o una licencia similar que permita su uso y distribución gratuitos siempre que se otorgue el crédito adecuado a los creadores originales. Esto nos ayuda a asegurarnos de que el contenido que compartimos sea legalmente sólido y esté en línea con nuestro compromiso de promover obras creativas de manera responsable.",
+    "musicUploadLink": "Asegúrese de que la fuente que proporcione a través del enlace indique claramente lo anterior para el contenido."
+    }
+}

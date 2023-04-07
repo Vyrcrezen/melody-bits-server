@@ -7,11 +7,12 @@
 		"mega": "millió"
 	},
 	"nav": {
-		"home": "Főmenü",
+		"home": "Főoldal",
 		"browse": "Böngészés",
 		"upload": "Feltöltés",
 		"approve": "Jóváhagyás",
 		"discussions": "Fórum",
+		"character": "Karakter",
 		"login": "Bejelentkezés",
 		"anonUser": {
 			"email": "E-mail",
@@ -89,6 +90,37 @@
 		"uploaded": "Feltöltve",
 		"tags": "Cimkék"
 	},
+	"index": {
+        "highlights": "Kiemelt Tulajdonságok",
+        "changes": "Változások",
+        "latestAdditions": "Friss Feltöltések",
+        
+        "carousel": {
+            "next": "Következő",
+            "previous": "Előző",
+
+            "langSlide": {
+                "title": "Több nyelven is elérhető",
+                "description": "Our music sharing website is designed to be accessible to people from all over the world. It is now accessible in German, English, Spanish, Hungarian and Japanese!"
+            },
+            "mobileSlide": {
+                "title": "Mobilon és asztali böngészőben is",
+                "description": "Whether you're on your phone or your computer, you'll have an easy and enjoyable experience navigating our website and discovering new music."
+            },
+            "uploadeSlide": {
+                "title": "Zene feltöltés és megosztás",
+                "description": "Our music sharing website allows you to upload and share your own music with the world. Whether you're a musician looking to share your original compositions, or simply want to showcase some of your favorite tracks, our platform makes it easy for you to get your music out there."
+            },
+            "favoriteSlide": {
+                "title": "Zene értékeléssel és kedvencek bejelőlésével",
+                "description": "With our rating and tracking system, you can easily keep track of your favorite songs, and share your recommendations with others."
+            },
+            "characterSlide": {
+                "title": "Karakter lap asztali szerepjátékhoz",
+                "description": "Our music sharing website now comes with a tabletop character sheet feature! Whether you're a fan of Dungeons and Dragons, Pathfinder, or any other tabletop game, you can now create and customize your own character sheet right on our website."
+            }
+        }
+    },
 	"profile": {
 		"nav_menu": {
 			"navigation": "Navigáció",

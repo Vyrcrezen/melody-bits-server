@@ -45,7 +45,12 @@ sequelize.sync({
 
 // Makeshift content server setup
 app.use('/', express.static(path.join(rootDir, '/out/static'), { extensions: ['html'] }));
-app.use('/', (_req, res) => { res.sendFile(path.join(rootDir, '/out/static/frontend-router.html')); });
+app.use('/', (_req, res) => {
+    // if (req.path.match(/\/[^/]+\.[a-zA-Z]{1,3}$/)) {
+    //     res.status(404).send();
+    // }
+    res.sendFile(path.join(rootDir, '/out/static/frontend-router.html'));
+});
 
 // ###########################
 
